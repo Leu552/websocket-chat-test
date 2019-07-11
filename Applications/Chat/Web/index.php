@@ -61,7 +61,7 @@
             // 登录 更新用户列表
             case 'login':
                 //{"type":"login","client_id":xxx,"client_name":"xxx","client_list":"[...]","time":"xxx"}
-                say(data['client_id'], data['client_name'],  data['client_name']+' 加入了聊天室', data['time']);
+                say(data['client_id'], data['client_name'],  data['client_name']+' 加入了TJPU聊天室', data['time']);
                 if(data['client_list'])
                 {
                     client_list = data['client_list'];
@@ -155,7 +155,12 @@
   </script>
 </head>
 <body onload="connect();">
-    <div class="container">
+
+    <div id="Layer1" style="position:absolute; width:100%; height:100%; z-index:-1">
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562845857817&di=563a3638e5b758cb03c0370cf24db38e&imgtype=0&src=http%3A%2F%2Fgss0.baidu.com%2F94o3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2F3bf33a87e950352ae6bd2d5a5143fbf2b3118b87.jpg" height="100%" width="100%"/>
+    </div>
+
+    <div class="container" style="opacity: 0.8">
 	    <div class="row clearfix">
 	        <div class="col-md-1 column">
 	        </div>
